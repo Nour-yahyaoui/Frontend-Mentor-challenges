@@ -1,1 +1,207 @@
 
+   * {
+      margin: 0;
+      padding: 0;   
+      font-family: arial; 
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items:center;
+      gap: 50px;
+      background-color: rgb(194, 248, 211);
+    }
+
+    form {
+      width: 50%;
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+      color: black;
+      padding: 30px;
+      margin-top: 10%;
+      border: solid 1px white;
+      height: auto;
+      margin-bottom: 200px;
+    }
+
+    .name input[type="text"], 
+    .l-name input[type="text"] {
+      width: 95%;
+      height: 50px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: .1px solid rgb(127, 127, 127);
+      padding: 10px;
+    }
+
+    input[type="text"]:focus, 
+    input[type="email"]:focus, 
+    .msg textarea:focus {
+      outline: none;
+    }
+
+    input[type="email"] {
+      width: 98%;
+      height: 50px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: .1px solid rgb(127, 127, 127);
+      padding: 10px;
+    }
+
+    label {
+      font-family: sans-serif;
+      color: gray;
+      display: block;
+    }
+
+    form span {
+      color: rgb(7, 177, 39);
+      font-weight: 700;
+    }
+
+    form h1 {
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      color: rgb(55, 55, 55);
+    }
+
+    .inputs {
+      display: flex;
+      width: 100%;
+    }
+
+    .name, 
+    .l-name {
+      flex: 1;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .email label {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .query .radios {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .query .radios .rad-1, 
+    .query .radios .rad-2 {
+      border: solid .1px gray;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      border-radius: 8px;
+      margin-top: 20px;
+      align-items: center;
+      height: 50px;
+      width: 48%;
+    }
+
+    .query .radios .rad-1 input[type="radio"], 
+    .query .radios .rad-2 input[type="radio"] {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+    }
+
+    .msg {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .msg label {
+      margin: 20px 0;
+    }
+
+    .msg textarea {
+      border-radius: 8px;
+      height: 100px;
+      padding: 10px;
+    }
+
+    .dl {
+      font-family: Arial, Helvetica, sans-serif;
+      color: gray;
+      width: 80%;
+    }
+
+    .dl #terms {
+      margin: 20px 0;
+    }
+
+    .submit input {
+      border: none;
+      width: 100%;
+      background-color: rgb(22, 107, 62);
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 750;
+      color: rgb(255, 252, 252);
+      height: 40px;
+    }
+
+    .submit {
+      margin: 10px 0;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    .attribution {
+      margin-bottom: 50px;
+      font-size: 14px;
+    }
+    .attribution a {
+      text-decoration: underline;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      color: rgb(0, 0, 0);
+      position: relative;
+    }
+   
+    .attribution {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      color: gray;
+    }
+
+
+    @media (max-width: 800px) {
+      .query .radios {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .query .radios .rad-1,  
+      .query .radios .rad-2 {
+        width: 100%;
+      }
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form {
+        width: 90%;
+      }
+
+      .dl #terms {
+        margin: 10px;
+      }
+    }
